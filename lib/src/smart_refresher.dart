@@ -8,8 +8,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/physics.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/foundation.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:pull_to_refresh/src/internals/slivers.dart';
+import 'package:pull_to_refresh3/pull_to_refresh.dart';
+import 'package:pull_to_refresh3/src/internals/slivers.dart';
 import 'internals/indicator_wrap.dart';
 import 'internals/refresh_physics.dart';
 import 'indicator/classic_indicator.dart';
@@ -693,6 +693,7 @@ class RefreshController {
         headerMode!.value = RefreshStatus.refreshing;
       });
     }
+    return null;
   }
 
   /// make the header enter refreshing state,and callback onRefresh
