@@ -57,6 +57,8 @@ class ClassicHeader extends RefreshIndicator {
 
   final TextStyle textStyle;
 
+  final double offset;
+
   const ClassicHeader({
     Key? key,
     RefreshStyle refreshStyle: RefreshStyle.Follow,
@@ -74,6 +76,7 @@ class ClassicHeader extends RefreshIndicator {
     this.idleText,
     this.iconPos: IconPosition.left,
     this.spacing: 15.0,
+    this.offset: 0.0,
     this.refreshingIcon,
     this.failedIcon: const Icon(Icons.error, color: Colors.grey),
     this.completeIcon: const Icon(Icons.done, color: Colors.grey),
@@ -84,6 +87,7 @@ class ClassicHeader extends RefreshIndicator {
           refreshStyle: refreshStyle,
           completeDuration: completeDuration,
           height: height,
+          offset: offset,
         );
 
   @override
